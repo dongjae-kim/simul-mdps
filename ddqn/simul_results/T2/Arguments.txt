@@ -1,0 +1,10 @@
+Arguments Summary of T2
+--task-id=2
+--model-id=5
+--sub-id=0
+--GRW=1
+--tree=1
+--bhv_pseudo=0
+--no_fitting=0
+--episodes=100
+--fix_behavior=0
