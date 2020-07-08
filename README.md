@@ -36,7 +36,7 @@ python main_gen_simul_task_meta_RL_PM.py --task-id=%d --sub-id=%d --GRW=%d --tre
 
 ## 1.3. DDQN (./ddqn)
 
-*Codes are written by  Jaehoon Shin (@kaist.ac.kr)*
+*Codes are written by  Jaehoon Shin (skalclrptsp@kaist.ac.kr)*
 
 We have uploaded the trained weights of PM-metaRL (./meta-RL/PM/SUBFIT). 
 
@@ -62,7 +62,7 @@ python main_gen_simul_task_meta_RL_GM.py --task-id=%d --sub-id=%d --GRW=%d --tre
 
 ## 2.2. DDQN (./ddqn)
 
-*Codes are written by  Jaehoon Shin (@kaist.ac.kr)*
+*Codes are written by  Jaehoon Shin (skalclrptsp@kaist.ac.kr)*
 
 We have uploaded the trained weights of PM-metaRL (./meta-RL/PM/SUBFIT). 
 
