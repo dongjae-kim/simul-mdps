@@ -1,0 +1,7 @@
+#PBS -N sjh2
+#PBS -l select=1:ncpus=1:host=bml2-slave2
+#PBS -j oe
+#PBS -m a
+pyenv local Code
+cd /home/sjh/kdj/parameter_recovery/gen_simulation_dat/novel_tasks_python/GPUfit/
+python main_gen_simul_task_meta_RL_main_force_to_extract_likelihood.py  --sub-id=0 --sub-id=2
