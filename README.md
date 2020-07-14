@@ -1,10 +1,12 @@
-*Readme has written by Dongjae Kim (kim10481@kaist.ac.kr)*
+https://arxiv.org/abs/2007.04578
+
+*Readme was written by Dongjae Kim (kim10481@kaist.ac.kr)*
 
 # 1. Policy matching
 
 ## 1.1. PFC-RL (./pfc-RL/)
 
-*Codes are written by Dongjae Kim (kim10481@kaist.ac.kr)*
+*Codes were written by Dongjae Kim (kim10481@kaist.ac.kr)*
 
 Two PFC-RL models are pre-trained as in the previous research (Lee et al., 2014). Since the models require 4 or 6 pre-trained parameters (unlike neural network's large number of weights), we just simply save it in csv formant for efficiency (regdata_*.csv files).
 
@@ -22,7 +24,7 @@ python main_gen_simul_task5.py --model-id=3  task-id=%d --sub-id=%d --GRW=%d --t
 
 ## 1.2. metaRL (./meta-RL/)
 
-*Codes are written by  Minsu Abel Yang and Dongjae Kim (kim10481@kaist.ac.kr)*
+*Codes were written by  Minsu Abel Yang and Dongjae Kim (kim10481@kaist.ac.kr)*
 
 We have uploaded the trained weights of PM-metaRL (./meta-RL/PM/SUBFIT). 
 
@@ -36,7 +38,7 @@ python main_gen_simul_task_meta_RL_PM.py --task-id=%d --sub-id=%d --GRW=%d --tre
 
 ## 1.3. DDQN (./ddqn)
 
-*Codes are written by  Jaehoon Shin (skalclrptsp@kaist.ac.kr)*
+*Codes were written by  Jaehoon Shin (skalclrptsp@kaist.ac.kr)*
 
 We have uploaded the trained weights of PM-metaRL (./meta-RL/PM/SUBFIT). 
 
@@ -50,7 +52,7 @@ python main_gen_simul_task_sbjtv_dqn.py --bhv_pseudo=0 --no_fitting=1 --fix_beha
 
 ## 2.1. metaRL (./meta-RL/)
 
-*Codes are written by  Minsu Abel Yang and Dongjae Kim (kim10481@kaist.ac.kr)*
+*Codes were written by  Minsu Abel Yang and Dongjae Kim (kim10481@kaist.ac.kr)*
 
 We have uploaded the trained weights of PM-metaRL (./meta-RL/PM/SUBFIT). 
 
@@ -62,7 +64,7 @@ python main_gen_simul_task_meta_RL_GM.py --task-id=%d --sub-id=%d --GRW=%d --tre
 
 ## 2.2. DDQN (./ddqn)
 
-*Codes are written by  Jaehoon Shin (skalclrptsp@kaist.ac.kr)*
+*Codes were written by  Jaehoon Shin (skalclrptsp@kaist.ac.kr)*
 
 We have uploaded the trained weights of PM-metaRL (./meta-RL/PM/SUBFIT). 
 
