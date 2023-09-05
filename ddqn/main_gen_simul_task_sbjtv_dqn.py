@@ -35,7 +35,7 @@ Simulation control parameters:
 
     --trials [num trials per episodes]
 
-BEHAV_DIR = 'bhv_results/'
+BEHAV_DIR = 'bhv_results0/'
 SIMUL_BEHAV_DIR = 'simul_results/'
 MODEL_LIST_IDF = 1 # 0 : MB ONLY, 1 : MF ONLY, 2 : LEE2014, 3 : ZPE MODEL.
 if MODEL_LIST_IDF == 0:

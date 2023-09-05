@@ -32,7 +32,7 @@ Simulation control parameters:
 
     --trials [num trials per episodes]
 
-BEHAV_DIR = 'bhv_results/'
+BEHAV_DIR = 'bhv_results0/'
 SIMUL_BEHAV_DIR = 'simul_results/'
 MODEL_LIST_IDF = 1 # 0 : MB ONLY, 1 : MF ONLY, 2 : LEE2014, 3 : ZPE MODEL.
 if MODEL_LIST_IDF == 0:
@@ -494,7 +494,7 @@ if __name__ == '__main__':
                         sim.CTXT_sbjtv = sbj_ctxt[index]
 
                     sim.model_path = './T'+ str(TASK_IDF) +'/SUBS/' + '/FIN'
-                    sim.tstr = 'bhv_results/SUB' + format(index, '03d') + '_BHV.csv'
+                    sim.tstr = 'bhv_results0/SUB' + format(index, '03d') + '_BHV.csv'
 
                     sim.MODEL_LIST_IDF = MODEL_LIST_IDF
                     sim.ladder_tree_ = ladder_tree_

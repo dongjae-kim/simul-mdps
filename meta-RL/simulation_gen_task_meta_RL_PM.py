@@ -62,7 +62,7 @@ TRIALS_PER_EPISODE_sbjtv = []
 CTXT_sbjtv = []
 
 model_path = './SUBFIT/SUBS-' + str(1) + '/FIN'
-tstr = 'bhv_results/SUB' + format(1, '03d') + '_BHV.csv'
+tstr = 'bhv_results0/SUB' + format(1, '03d') + '_BHV.csv'
 
 TASK_IDF = 0
 # toggle of task idf

@@ -9,7 +9,7 @@ TEST = int(sys.argv[2])
 MAX = int(sys.argv[3])
 
 model_path = './SUBFIT/SUBS-'+str(TRAIN)+'/FIN'
-tstr = 'bhv_results/SUB'+format(TEST,'03d')+'_BHV.csv'
+tstr = 'bhv_results0/SUB'+format(TEST,'03d')+'_BHV.csv'
 
 tf.reset_default_graph()
 with tf.Session() as sess:

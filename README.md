@@ -2,7 +2,7 @@ https://arxiv.org/abs/2007.04578
 
 *Readme was written by Dongjae Kim (dongjaekim@dankook.ac.kr)*
 
-# 1. Policy matching
+# 1. Policy matching 
 
 ## 1.1. PFC-RL (./pfc-RL/)
 
@@ -34,8 +34,6 @@ To generate simulation data of metaRL, simply run:
 python main_gen_simul_task_meta_RL_PM.py --task-id=%d --sub-id=%d --GRW=%d --tree=%d
 ```
 
-
-
 ## 1.3. DDQN (./ddqn)
 
 *Codes were written by  Jaehoon Shin (skalclrptsp@kaist.ac.kr)*
@@ -47,6 +45,29 @@ To generate simulation data of metaRL, simply run:
 ```
 python main_gen_simul_task_sbjtv_dqn.py --bhv_pseudo=0 --no_fitting=1 --fix_behavior=0 --task-id=%d --model-id=%d --sub-id=%d --GRW=%d --tree=%d  --episodes=%d 
 ```
+
+## 1.4. Successor representation (./sr/)
+
+*Codes were checked by Dongjae Kim (dongjaekim@dankook.ac.kr)*
+
+```
+python run_pm.py %d 0
+```
+where `%d` is the subject id in this model.
+
+## 1.5. Implicit quantile network (./iqn/)
+
+*Codes were checked by Dongjae Kim (dongjaekim@dankook.ac.kr)*
+
+```
+# training 
+python run_pm.py --subid=%d --numsim=%d
+# generating data
+python main_generate_pm.py --subid=%d --numsim=%d --numiter=%d
+```
+
+
+Note that it is easy to convert from policy matching to behavior cloning since `behavioral cloning` is training model by rewarding (+1) the agent when commit the same action as the human subject
 
 # 2. Goal matching
 
@@ -74,7 +95,41 @@ To generate simulation data of metaRL, simply run:
 python main_gen_simul_task_sbjtv_dqn.py --bhv_pseudo=1 --no_fitting=1 --fix_behavior=0 --task-id=%d --model-id=%d --sub-id=%d --GRW=%d --tree=%d  --episodes=%d 
 ```
 
-# 3. Arguments for 10 Markov decision tasks
+## 2.3. Successor representation (./sr/)
+
+*Codes were checked by Dongjae Kim (dongjaekim@dankook.ac.kr)*
+
+```
+python run_gm.py %d 0
+```
+`%d` represents the subject id in this model.
+
+## 2.4. IQN (./iqn)
+
+*Codes were checked by Dongjae Kim (dongjaekim@dankook.ac.kr)*
+
+```
+# training 
+python run_gm.py --subid=%d --numsim=%d
+# generating data
+python main_generate_gm.py --subid=%d --numsim=%d --numiter=%d
+```
+
+## 
+
+# 3. Generative Adversarial Imitation Learning (GAIL) (./gail)
+
+*Codes were checked by Dongjae Kim (dongjaekim@dankook.ac.kr)*
+
+```
+# training 
+python run.py --subid=%d --numiter=%d
+
+# generating simulations
+python generates.py --subid=%d --numsim=%d --numiter=%d
+```
+
+# 4. Arguments for 10 Markov decision tasks
 
 Description of arguments to specify tasks.
 
@@ -89,4 +144,3 @@ Description of arguments to specify tasks.
 --GRW: the method to control state transition uncertainty using Gaussian random walk process or not. 0: switch-switch model, 1: fixed-drift, 2: drift-drift 3: fixed-(drif+switch) 4: (drift+switch)-(drift+switch)
 --tree: Tree or ladder shape of the task 0: ladder, 1: tree
 ```
-
